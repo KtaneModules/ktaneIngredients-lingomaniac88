@@ -486,7 +486,7 @@ public class IngredientsScript : MonoBehaviour
 			if (strippedCommand.Equals("reset"))
 			{
 				yield return null;
-				yield return new[] { AddButton };
+				yield return new[] { ResetButton };
 				continue;
 			}
 
