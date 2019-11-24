@@ -14,7 +14,7 @@ MonoBehaviour:
   id: ingredients
   title: Ingredients
   author: lingomaniac88
-  description: 'Ingredients v1.1
+  description: 'Ingredients v1.2
 
     This might be a good spot to find some explosions.  Let''s just hope that they''re
     explosions of flavor instead of the usual kind.
@@ -27,6 +27,6 @@ MonoBehaviour:
 
 
     Manual available here: https://ktane.timwi.de/HTML/Ingredients.html'
-  version: 1.1
+  version: 1.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: d717e4f6c87bfaf458247710c4edce2b, type: 3}

@@ -9,6 +9,9 @@ Manual available here: https://ktane.timwi.de/HTML/Ingredients.html
 
 ## Version History
 
+v1.2:
+- Fixed a bug where Filet Mignon Poêlé had the wrong technique.
+
 v1.1:
 - Fixed a TP bug where the reset command presses the wrong button.
 

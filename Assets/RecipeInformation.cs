@@ -145,7 +145,7 @@ namespace KtaneIngredients
 			new Recipe("Stuffed Quail", Course.Meat, CookingTechnique.Knife, new Ingredient[] {
 				Ingredient.Rice, Ingredient.Portobello, Ingredient.Porcini, Ingredient.MillerMushroom, Ingredient.Parsley, Ingredient.Quail
 			}),
-			new Recipe("Filet Mignon Poêlé", Course.Meat, CookingTechnique.Pepper, new Ingredient[] {
+			new Recipe("Filet Mignon Poêlé", Course.Meat, CookingTechnique.Fire, new Ingredient[] {
 				Ingredient.SourCherry, Ingredient.Butter, Ingredient.BlackTruffle, Ingredient.Rosemary, Ingredient.Cloves, Ingredient.FiletMignon
 			}),
 
