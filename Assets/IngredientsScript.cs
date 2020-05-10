@@ -474,7 +474,8 @@ public class IngredientsScript : MonoBehaviour
 					}
 					else
 					{
-						yield return string.Format("unsubmittablepenalty Unable to find ingredient \"{0}\".", ingredient);
+						yield return string.Format("sendtochaterror Unable to find ingredient \"{0}\".", ingredient);
+						yield return string.Format("unsubmittablepenalty");
 						yield break;
 					}
 				}
@@ -491,11 +492,11 @@ public class IngredientsScript : MonoBehaviour
 			}
 
 			// Submit
-			var submitMatch = Regex.Match(strippedCommand, "^press (egg|fire|knife|pepper) on (\\d)$");
+			var submitMatch = Regex.Match(strippedCommand, "^press (egg|fire|knife|pepper) (on|at) (\\d)$");
 			if (submitMatch.Success)
 			{
 				var technique = submitMatch.Groups[1].Value;
-				var digit = submitMatch.Groups[2].Value;
+				var digit = submitMatch.Groups[3].Value;
 
 				var buttonNames = new[] { "egg", "fire", "knife", "pepper" };
 				var buttonToPress = TechniqueButtons[Array.IndexOf(buttonNames, technique)];
@@ -511,7 +512,7 @@ public class IngredientsScript : MonoBehaviour
 					}
 					else
 					{
-						yield return new WaitForSeconds(0.1f);
+						yield return "trywaitcancel 0.1";
 					}
 				}
 
